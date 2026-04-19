@@ -1,0 +1,6 @@
+School,Curriculum_Rating_1to5,Languages_Rating_1to5,Monthly_Tuition_IDR,Monthly_Extra_Fees_IDR,Distance_OneWay_KM,Transport_Cost_per_KM_IDR,School_Days_Per_Month,Monthly_Transport_IDR,Monthly_Opex_Total_IDR,Yearly_Total_IDR,Two_Year_Total_TKA_TKB_IDR,Continuity_Bonus_0to1,Cost_Rating_1to5,Final_Weighted_Score_100,Notes
+School A,,,,,,2500,22,=F2*2*G2*H2,=D2+E2+I2,=J2*12,=K2*2,0,=ROUND(5*((MIN($J$2:$J$20)/J2)*0.4 + (MIN($L$2:$L$20)/L2)*0.6),2),=ROUND((B2/5*35)+(C2/5*20)+(N2/5*35)+(M2*10),2),
+School B,,,,,,2500,22,=F3*2*G3*H3,=D3+E3+I3,=J3*12,=K3*2,0,=ROUND(5*((MIN($J$2:$J$20)/J3)*0.4 + (MIN($L$2:$L$20)/L3)*0.6),2),=ROUND((B3/5*35)+(C3/5*20)+(N3/5*35)+(M3*10),2),
+School C,,,,,,2500,22,=F4*2*G4*H4,=D4+E4+I4,=J4*12,=K4*2,0,=ROUND(5*((MIN($J$2:$J$20)/J4)*0.4 + (MIN($L$2:$L$20)/L4)*0.6),2),=ROUND((B4/5*35)+(C4/5*20)+(N4/5*35)+(M4*10),2),
+School D,,,,,,2500,22,=F5*2*G5*H5,=D5+E5+I5,=J5*12,=K5*2,0,=ROUND(5*((MIN($J$2:$J$20)/J5)*0.4 + (MIN($L$2:$L$20)/L5)*0.6),2),=ROUND((B5/5*35)+(C5/5*20)+(N5/5*35)+(M5*10),2),
+School E,,,,,,2500,22,=F6*2*G6*H6,=D6+E6+I6,=J6*12,=K6*2,0,=ROUND(5*((MIN($J$2:$J$20)/J6)*0.4 + (MIN($L$2:$L$20)/L6)*0.6),2),=ROUND((B6/5*35)+(C6/5*20)+(N6/5*35)+(M6*10),2),

@@ -1,7 +1,6 @@
 ---
 name: claude-education-planner
 description: "Use when: finding the best school for your child and planning finances for education (day-to-day, monthly, long-term budgeting). Primary focus: education excellence with financial sustainability. Combines school evaluation, family budget analysis, and long-term financial planning."
-modelId: claude
 ---
 
 # Education & Finance Planning Agent
