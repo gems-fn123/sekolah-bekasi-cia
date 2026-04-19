@@ -17,8 +17,11 @@ Education-first workspace for school selection and family financial planning.
 	- Updated final ranking notes: `planning/preschool_preliminary_ranking.md`
 
 - Organized structure for latest run
+	- Raw brochure image inputs: `data/inputs/preschool/brochure_images/2026-04-18_whatsapp/`
 	- Home base and decision rules: `data/context/home_base_and_rules.md`
 	- Methodology details: `analysis/preschool/ranking_methodology_2026.md`
+	- Cost component calculation report: `analysis/preschool/cost_component_calculation_report_2026.md`
+	- Comprehensive school audit report: `analysis/preschool/comprehensive_school_cost_audit_2026-04-19.md`
 	- Final output index: `outputs/README.md`
 	- CSV outputs: `outputs/tables/`
 	- Excel-openable workbook outputs: `outputs/workbooks/`
