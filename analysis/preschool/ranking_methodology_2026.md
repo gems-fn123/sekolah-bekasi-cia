@@ -5,6 +5,8 @@
 - Home base fixed to Pekayon Jaya address in data/context/home_base_and_rules.md.
 - Transport model:
   - Monthly transport = one-way distance x 2 x 22 days x Rp 2,500 per km
+- Ranking tables are rebuilt from source candidates via:
+  - `python analysis/preschool/rebuild_rankings.py --write-candidates`
 
 ## Cost normalization outputs
 For each school, these are generated:
@@ -28,3 +30,7 @@ For each school, these are generated:
 ## Continuity note policy
 - Seat priority and 30% discount assumption for same-school Elementary progression is recorded as note only.
 - It is not included in Quality, Cost, or Optimized scoring.
+
+## Consistency guardrail
+- Do not use spreadsheet formulas embedded in CSV cells as system-of-record values.
+- Use the rebuilt numeric candidate file and generated tables under `outputs/tables/` as the downstream source for dashboards/BI.

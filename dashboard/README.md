@@ -15,10 +15,12 @@ The app is aligned to the uploaded template:
 - A sheet named "Budget Template" for category-level budget and realization
 
 ## Preferred workflow: Google Sheets + Looker Studio
-1. Export normalized tables from workbook
+1. Rebuild school ranking tables
+   - `python analysis/preschool/rebuild_rankings.py --write-candidates`
+2. Export normalized tables from workbook
    - `python dashboard/export_for_looker.py --input "Pengeluaran_budget_template (1).xlsx" --output dashboard/exports`
-2. Import CSV files from `dashboard/exports` into Google Sheets tabs
-3. Build Looker Studio report on top of those tabs
+3. Import CSV files from `dashboard/exports` into Google Sheets tabs
+4. Build Looker Studio report on top of those tabs
 
 Detailed guide:
 - `dashboard/GOOGLE_SHEETS_LOOKER_SETUP.md`

@@ -36,7 +36,9 @@ Education-first workspace for school selection and family financial planning.
 
 1. Install dependencies
 	 - `pip install -r requirements.txt`
-2. Export normalized tables
+2. Rebuild school ranking tables from extracted candidate inputs
+	- `python analysis/preschool/rebuild_rankings.py --write-candidates`
+3. Export normalized tables
 	- `python dashboard/export_for_looker.py --input "Pengeluaran_budget_template (1).xlsx" --output dashboard/exports`
 
 Optional local app:
@@ -47,6 +49,6 @@ Optional local app:
 - Curriculum: 35%
 - Languages: 20%
 - Cost efficiency: 35%
-- Continuity bonus to Elementary: 10%
+- Continuity bonus to Elementary: tracked as a note only (currently excluded from scoring)
 
 This model is designed to balance education excellence and financial sustainability.

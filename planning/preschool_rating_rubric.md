@@ -4,7 +4,7 @@
 - Curriculum: 35%
 - Languages: 20%
 - Cost efficiency (monthly plus 2-year total): 35%
-- Continuity bonus to Elementary in same environment: 10%
+- Continuity bonus to Elementary in same environment: documented as note only (excluded from ranking score)
 
 ## Curriculum Rating (1 to 5)
 - 5: Proven child-centered curriculum, strong literacy-numeracy readiness, project-based learning, and clear parent progress reporting.
@@ -30,6 +30,7 @@
 - 1.0: Clear continuity path to Elementary in same school/environment with priority seat.
 - 0.5: Same foundation but different campus and no guaranteed continuation.
 - 0.0: No continuity pathway.
+- This field is retained for scenario notes and future what-if analysis, but is currently excluded from ranking scores.
 
 ## Cost Formula Notes
 - Monthly transport = one-way distance x 2 x cost per km x school days per month.
@@ -39,4 +40,6 @@
 
 ## Final Score Formula
 Final score is out of 100:
-- (Curriculum/5 x 35) + (Languages/5 x 20) + (CostRating/5 x 35) + (ContinuityBonus x 10)
+- `QualityScore = ((Curriculum/5 x 35) + (Languages/5 x 20)) / 55 x 100`
+- `CostScore = 100 x (0.4 x min(MonthlyCost)/MonthlyCost + 0.3 x min(Year1Cost)/Year1Cost + 0.3 x min(Year2Cost)/Year2Cost)`
+- `OptimizedScore = ((Curriculum/5 x 35) + (Languages/5 x 20) + (CostScore/100 x 35)) / 90 x 100`
