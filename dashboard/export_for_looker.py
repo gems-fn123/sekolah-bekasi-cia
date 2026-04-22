@@ -127,8 +127,8 @@ def main() -> None:
     parser.add_argument("--output", default="dashboard/exports", help="Output directory for CSV exports")
     parser.add_argument(
         "--schools",
-        default="planning/preschool_candidates_extracted_provisional.csv",
-        help="Optional school candidate CSV to copy into exports",
+        default="outputs/tables/preschool_rankings_comprehensive.csv",
+        help="Optional school ranking/candidate CSV to copy into exports",
     )
     args = parser.parse_args()
 
